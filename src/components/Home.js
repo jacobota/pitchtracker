@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Home.css'
+import { Link } from 'react-router-dom'
 
 export class Home extends Component {
   render() {
@@ -10,12 +11,13 @@ export class Home extends Component {
       </div>
       {/*Description*/}
       <div className='container-lg' id='textContainer'>
-        <div className='d-flex justify-content-center p-3 mt-5'>
+        <div className='d-flex justify-content-center pt-5 p-3 mt-5'>
             <h1 id='description'>DESCRIPTION</h1>
         </div>
         <div className='d-flex flex-column justify-content-start p-3'>
             {/*Overall Description*/}
-            <p className='pb-4' id='text'>Pitch Tracker is a web application whose purpose is to enable 
+            <p className='pb-4' id='text'>
+                Pitch Tracker is a web application whose purpose is to enable 
                 coaches, parents, fans, or even players to not only gain an understanding 
                 for baseball statistics, but to also give an insight on tendencies for 
                 pitchers and hot/cold zones for hitters. The intent of this web application is to 
@@ -24,7 +26,8 @@ export class Home extends Component {
                 
             </p>
             {/*Pitchers Description*/}
-            <p className='pb-4' id='text'>For pitchers, this web application is meant to discover tendencies
+            <p className='pb-4' id='text'>
+                For pitchers, this web application is meant to discover tendencies
                 in a pitchers game, it is used to evaluate how often certain pitches 
                 are thrown, where in the zone the pitcher tends to go to most, and display the
                 overall statistics of the player over time. The intent is to bring a different 
@@ -32,7 +35,8 @@ export class Home extends Component {
                 to look back and see what works and what doesn't.
             </p>
             {/*Hitters Description*/}
-            <p className='pb-4' id='text'>For hitters, this web application is meant to display where and in what   
+            <p className='pb-4' id='text'>
+                For hitters, this web application is meant to display where and in what   
                 counts a hitter is most productive. Pitch Tracker will also display hot and cold 
                 zones for the hitter based on their averages that they produce when the ball is 
                 thrown into specific locations. The intent for the hitters is to show visually to 
@@ -43,7 +47,7 @@ export class Home extends Component {
       </div>
       {/*How it works*/}
       <div className='container-lg' id='textContainer'>
-        <div className='d-flex justify-content-center p-3 mt-5'>
+        <div className='d-flex justify-content-center pt-5 p-3 mt-5'>
             <h1 id='description'>HOW IT WORKS</h1>
         </div>
         <div className='d-flex flex-column justify-content-start p-3'>
@@ -58,6 +62,7 @@ export class Home extends Component {
                 of the pitcher and display them to the user above plate view so that the user
                 has a sense of how the pitcher is doing.
             </p>
+            {/*Add an image of pitcher view*/}
             {/*Hitters: How it works*/}
             <p className='pb-4' id='hiwtext'>
                 Hitters:
@@ -68,6 +73,25 @@ export class Home extends Component {
                 was thrown and the result of the pitch. From that it will build the statistics 
                 of the hitter and display them to the user above plate view so that the user
                 has a sense of how the hitter is doing.
+            </p>
+            {/*Add an image of hitter view*/}
+        </div>
+      </div>
+      {/*Why this app was created*/}
+      <div className='container-lg' id='textContainer'>
+        <div className='d-flex justify-content-center pt-5 p-3 mt-5'>
+            <h1 id='description'>WHY WAS THIS CREATED</h1>
+        </div>
+        <div className='d-flex flex-column justify-content-start p-3'>
+            <p className='pb-4' id='text'>
+                As a former college baseball player and a computer science major, I decided to create
+                a fun app that ties together a big part of what college was to me. As a computer science major I 
+                want to keep refining my skills and learning new tools such as React, this being my first
+                React app, and developing something that interests me. As a baseball player
+                I never fully understood the importance of counts, what zones I hit the ball well in, 
+                and pitcher tendencies till very late in my baseball career, so the point of this is to hopefully
+                pass on to players and coaches so that they can view what works and what doesn't based on past 
+                performances.
             </p>
         </div>
       </div>
