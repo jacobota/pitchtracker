@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
 import './Home.css'
-import { Link } from 'react-router-dom'
 
 export class Home extends Component {
   render() {
     return (
       <>
       <div className='pt-5 pb-5 d-flex justify-content-center' id='headContainer'>
-        <h1 id='header'>Pitch Tracker</h1>
+        <h1 id='header'>Pitch Tracker : Home View</h1>
       </div>
       {/*Description*/}
       <div className='container-lg' id='textContainer'>
@@ -52,7 +51,7 @@ export class Home extends Component {
         </div>
         <div className='d-flex flex-column justify-content-start p-3'>
             {/*Pitchers: How it works*/}
-            <p className='pb-4' id='hiwtext'>
+            <p className='pb-1' id='hiwtext'>
                 Pitchers:
             </p>
             <p className='pb-4' id='text'>
@@ -64,7 +63,7 @@ export class Home extends Component {
             </p>
             {/*Add an image of pitcher view*/}
             {/*Hitters: How it works*/}
-            <p className='pb-4' id='hiwtext'>
+            <p className='pb-1' id='hiwtext'>
                 Hitters:
             </p>
             <p className='pb-4' id='text'>

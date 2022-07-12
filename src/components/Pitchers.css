@@ -1,0 +1,9 @@
+#headContainer {
+    border-bottom: #EF3B3F 3px solid;
+}
+
+#header {
+    font-family: 'Bangers', cursive;
+    color:#EF3B3F !important;
+    font-size: 4.5rem;
+}
