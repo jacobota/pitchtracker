@@ -1,0 +1,24 @@
+#nav {
+    background-color: white;
+    font-family: 'Bangers', cursive;
+}
+
+#navhead {
+    font-size: 2.5rem;
+}
+
+.offcanvas {
+    background-color: white;
+    font-family: 'Bangers', cursive;
+}
+
+#links {
+    font-size: 2rem;
+    margin-left: 15px;
+    color:#353434 !important;
+}
+
+#links:hover {
+    font-weight: bolder;
+    text-decoration: underline;
+}

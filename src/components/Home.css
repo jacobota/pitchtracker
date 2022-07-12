@@ -1,0 +1,34 @@
+#headContainer {
+    border-bottom: #EF3B3F 3px solid;
+}
+
+#header {
+    font-family: 'Bangers', cursive;
+    color:#EF3B3F !important;
+    font-size: 4.5rem;
+}
+
+#description {
+    font-family: 'Bangers', cursive;
+    color:#EF3B3F !important;
+    font-size: 4rem;
+    border-bottom: #EF3B3F 3px solid;
+}
+
+#textContainer {
+    background-color: #CAEBF2;
+    border-radius: 50px;
+}
+
+#text {
+    font-family: 'Oswald', sans-serif;
+    color:#353434 !important;
+    font-size: 2.5rem;
+    text-indent: 50px;
+}
+
+#hiwtext {
+    font-family: 'Oswald', sans-serif;
+    color:#353434 !important;
+    font-size: 2.5rem;
+}
