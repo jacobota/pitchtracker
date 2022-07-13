@@ -6,7 +6,7 @@ export class Home extends Component {
     return (
       <>
       <div className='pt-5 pb-5 d-flex justify-content-center' id='headContainer'>
-        <h1 id='header'>Pitch Tracker : Home View</h1>
+        <h1 id='header'>Pitch Tracker</h1>
       </div>
       {/*Description*/}
       <div className='container-lg' id='textContainer'>
@@ -79,16 +79,16 @@ export class Home extends Component {
       {/*Why this app was created*/}
       <div className='container-lg' id='textContainer'>
         <div className='d-flex justify-content-center pt-5 p-3 mt-5'>
-            <h1 id='description'>WHY WAS THIS CREATED</h1>
+            <h1 id='description'>WHY WAS THIS WEBAPP CREATED</h1>
         </div>
         <div className='d-flex flex-column justify-content-start p-3'>
             <p className='pb-4' id='text'>
-                As a former college baseball player and a computer science major, I decided to create
+                As a former college baseball player with a B.S. in computer science, I decided to create
                 a fun app that ties together a big part of what college was to me. As a computer science major I 
                 want to keep refining my skills and learning new tools such as React, this being my first
                 React app, and developing something that interests me. As a baseball player
                 I never fully understood the importance of counts, what zones I hit the ball well in, 
-                and pitcher tendencies till very late in my baseball career, so the point of this is to hopefully
+                and pitcher tendencies till very late in my baseball career. So the point of this is to hopefully
                 pass on to players and coaches so that they can view what works and what doesn't based on past 
                 performances.
             </p>

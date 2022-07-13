@@ -7,3 +7,30 @@
     color:#EF3B3F !important;
     font-size: 4.5rem;
 }
+
+#buttonText {
+    font-family: 'Bangers', cursive;
+    color:black !important;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+#button {
+    box-shadow: 3px 3px 3px black;
+}
+
+#button:hover {
+    background: linear-gradient(330deg, white,black);
+}
+
+#button:hover > #buttonText {
+    color: white !important;
+}
+
+#text {
+    font-family: 'Bangers', cursive;
+    color:#EF3B3F !important;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-left: -50px;
+}

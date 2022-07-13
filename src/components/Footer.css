@@ -1,0 +1,14 @@
+#footerText {
+    color: white !important;
+    font-size: 3.5vw;
+    margin: 15px;text-decoration: none;
+}
+
+#containerfooter>#footerText:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#containerfooter {
+    border-bottom: 3px solid white;
+}
