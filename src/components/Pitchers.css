@@ -27,10 +27,9 @@
     color: white !important;
 }
 
-#text {
+#pitchtext {
     font-family: 'Bangers', cursive;
     color:#EF3B3F !important;
     text-decoration: none;
     font-size: 3rem;
-    margin-left: -50px;
 }
