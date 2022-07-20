@@ -17,6 +17,7 @@
 
 #button {
     box-shadow: 3px 3px 3px black;
+    border: solid 3px black;
 }
 
 #button:hover {

@@ -24,7 +24,7 @@ export class Mynavbar extends Component {
                   <Nav.Link href="/" id="links">HOME</Nav.Link>
                   <Nav.Link href="/pitchers" id="links">PITCHERS</Nav.Link>
                   <Nav.Link href="/hitters" id="links">HITTERS</Nav.Link>
-                  <Nav.Link href="signin" id="links">SIGN-IN</Nav.Link>
+                  <Nav.Link href="/signin" id="links">SIGN-IN</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

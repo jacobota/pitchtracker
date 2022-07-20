@@ -1,0 +1,79 @@
+#box {
+    width: 450px;
+}
+
+#ball-up {
+    border: 3px solid grey;
+    background-color: lightgrey;
+    height: 90px;
+}
+
+#ball-left {
+    border-left: 3px solid grey;
+    background-color: lightgrey;
+}
+
+#ball-right {
+    border-right: 3px solid grey;
+    background-color: lightgrey;
+}
+
+#ball-down {
+    border: 3px solid grey;
+    background-color: lightgrey;
+    height: 90px;
+}
+
+#strike-up-away {
+    border: 3px solid black;
+    background-color: lightgrey;
+    height: 90px;
+}
+
+#strike-up-mid {
+    border: 3px solid black;
+    background-color: lightgrey;
+    height: 90px;
+}
+
+#strike-up-in {
+    border: 3px solid black;
+    background-color: lightgrey;
+    height: 90px;
+}
+
+#strike-mid-away {
+    border: 3px solid black;
+    background-color: lightgrey;
+    height: 90px;
+}
+
+#strike-mid-mid {
+    border: 3px solid black;
+    background-color: lightgrey;
+    height: 90px;
+}
+
+#strike-mid-in {
+    border: 3px solid black;
+    background-color: lightgrey;
+    height: 90px;
+}
+
+#strike-down-away {
+    border: 3px solid black;
+    background-color: lightgrey;
+    height: 90px;
+}
+
+#strike-down-mid {
+    border: 3px solid black;
+    background-color: lightgrey;
+    height: 90px;
+}
+
+#strike-down-in {
+    border: 3px solid black;
+    background-color: lightgrey;
+    height: 90px;
+}
