@@ -1,7 +1,8 @@
 import React from 'react'
 import './PitcherBox.css'
 
-const PitcherBox = () => {
+const PitcherBox = (props) => {
+    console.log(props)
   return (
     <div className='container' id='box'>
       <div className='row'>

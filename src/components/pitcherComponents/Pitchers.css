@@ -18,6 +18,7 @@
 #button {
     box-shadow: 3px 3px 3px black;
     border: solid 3px black;
+    width: 300px;
 }
 
 #button:hover {
@@ -28,7 +29,7 @@
     color: white !important;
 }
 
-#pitchtext {
+#labels {
     font-family: 'Bangers', cursive;
     color:#EF3B3F !important;
     text-decoration: none;
