@@ -11,12 +11,12 @@ export class Mynavbar extends Component {
       <div>
         <Navbar key="xl" expand="xl" className="mb-1" id="nav">
           <Container fluid>
-            <Navbar.Brand className="ms-4" id="navhead" style={{color:"#EF3B3F"}}>Pitch Tracker</Navbar.Brand>
+            <Navbar.Brand className="ms-4" id="navhead" style={{color:"#EF3B3F"}}>Pitch Charter</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-xl`}/>
             <Navbar.Offcanvas id={`offcanvasNavbar-expand-xl`} aria-labelledby={`offcanvasNavbarLabel-expand-xl`} placement="end" className="offcanvas">
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-xl`} style={{color:"#EF3B3F"}}>
-                  Pitch Tracker
+                  Pitch Charter
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>

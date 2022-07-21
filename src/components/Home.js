@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import './Home.css'
+import PitcherView from './images/pitcher_view.png'
 
 export class Home extends Component {
   render() {
     return (
       <>
       <div className='pt-5 pb-5 d-flex justify-content-center' id='headContainer'>
-        <h1 id='header'>Pitch Tracker</h1>
+        <h1 id='header'>Pitch Charter</h1>
       </div>
       {/*Description*/}
       <div className='container-lg' id='textContainer'>
@@ -57,11 +58,17 @@ export class Home extends Component {
             <p className='pb-4' id='text'>
                 After creating a pitcher, plate view will be enabled to chart the pitcher.
                 In order to submit a pitch, you must press a location on the zone, what pitch 
-                was thrown and the result of the pitch. From that it will build the statistics 
+                was thrown (and the result of the pitch *Future plan). From that it will build the statistics 
                 of the pitcher and display them to the user above plate view so that the user
                 has a sense of how the pitcher is doing.
             </p>
             {/*Add an image of pitcher view*/}
+            <p className='pb-1' id='hiwtext'>
+                Pitchers View Example:
+            </p>
+            <div className='d-flex justify-content-center mb-3'>
+              <img src={PitcherView} alt="Pitcher View Example" id='image'></img>
+            </div>
             {/*Hitters: How it works*/}
             <p className='pb-1' id='hiwtext'>
                 Hitters:

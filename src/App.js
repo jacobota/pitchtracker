@@ -7,8 +7,6 @@ import Hitters from './components/hitterComponents/Hitters';
 import Signin from './components/loginComponents/Signin';
 import { Routes, Route } from 'react-router-dom';
 import Footer from './components/pageComponents/Footer';
-import Addpitcher from './components/pitcherComponents/Addpitcher.js';
-import Pitcheranalysis from './components/pitcherComponents/Pitcheranalysis';
 
 function App() {
   return (
@@ -20,8 +18,6 @@ function App() {
           <Route path='/pitchers' element={<Pitchers />}/>
           <Route path='/hitters' element={<Hitters />}/>
           <Route path='/signin' element={<Signin />}/>
-          <Route path='/addpitcher' element={<Addpitcher />}/>
-          <Route path='/pitcheranalysis' element={<Pitcheranalysis />}/>
         </Routes>
       </div>
       <Footer />

@@ -32,3 +32,9 @@
     color:#353434 !important;
     font-size: 2.5rem;
 }
+
+#image {
+    height: 600px;
+    width: 500px;
+    border: 5px solid black;
+}
