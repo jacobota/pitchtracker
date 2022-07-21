@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './Pitchers.css'
 import PitcherBox from './PitcherBox'
+import PitcherStats from'./PitchStats'
 
 const Pitchers = () => {
   //set states that will be used
@@ -202,6 +203,12 @@ const Pitchers = () => {
         {displayCurveball && <PitcherBox pitchType={curveballObject}/>}
         {displaySlider && <PitcherBox pitchType={sliderObject}/>}
         {displayChangeup && <PitcherBox pitchType={changeupObject}/>}
+      </div>
+      <div className=' mt-5 p-5 d-flex justify-content-center container'>
+        {displayFastball && <PitcherStats pitchType={fastballObject}/>}
+        {displayCurveball && <PitcherStats pitchType={curveballObject}/>}
+        {displaySlider && <PitcherStats pitchType={sliderObject}/>}
+        {displayChangeup && <PitcherStats pitchType={changeupObject}/>}
       </div>
       <div className='pt-5 d-flex justify-content-center'>
       <label className='mb-5' id='labels'>Filter Pitch:
