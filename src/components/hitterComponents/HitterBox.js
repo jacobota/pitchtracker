@@ -3,7 +3,7 @@ import React from 'react'
 const HitterBox = (props) => {
   //conditionals to show what color to show for each spot
   //ballup
-  //change perc to props.pitchtype.ballUp
+  console.log(props)
   let ballUpAvg = props.pitchType.ballUp / props.pitchType.ballUpAtbats
   ballUpAvg = ballUpAvg.toFixed(3)
   let ballUpDefine
@@ -238,35 +238,35 @@ return (
       {ballUpDefine == "freeze" && <div style={freeze} className='col' id='ball-up'>{ballUpAvg}</div>}
     </div>
     <div className='row'>
-      {ballLeftDefine == "grey" && <div className='col' id='ball-left'>{props.pitchType.ballLeft}</div>}
-      {ballLeftDefine == "hot" && <div style={hot} className='col' id='ball-left'>{props.pitchType.ballLeft}</div>}
-      {ballLeftDefine == "medium" && <div style={medium} className='col' id='ball-left'>{props.pitchType.ballLeft}</div>}
-      {ballLeftDefine == "cold" && <div style={cold} className='col' id='ball-left'>{props.pitchType.ballLeft}</div>}
-      {ballLeftDefine == "freeze" && <div style={freeze} className='col' id='ball-left'>{props.pitchType.ballLeft}</div>}
+      {ballLeftDefine == "grey" && <div className='col' id='ball-left'>{ballLeftAvg}</div>}
+      {ballLeftDefine == "hot" && <div style={hot} className='col' id='ball-left'>{ballLeftAvg}</div>}
+      {ballLeftDefine == "medium" && <div style={medium} className='col' id='ball-left'>{ballLeftAvg}</div>}
+      {ballLeftDefine == "cold" && <div style={cold} className='col' id='ball-left'>{ballLeftAvg}</div>}
+      {ballLeftDefine == "freeze" && <div style={freeze} className='col' id='ball-left'>{ballLeftAvg}</div>}
       
-      {strikeUpAwayDefine == "grey" && <div className='col' id='strike-up-away'>{props.pitchType.strikeUpAway}</div>}
-      {strikeUpAwayDefine == "hot" && <div style={hot} className='col' id='strike-up-away'>{props.pitchType.strikeUpAway}</div>}
-      {strikeUpAwayDefine == "medium" && <div style={medium} className='col' id='strike-up-away'>{props.pitchType.strikeUpAway}</div>}
-      {strikeUpAwayDefine == "cold" && <div style={cold} className='col' id='strike-up-away'>{props.pitchType.strikeUpAway}</div>}
-      {strikeUpAwayDefine == "freeze" && <div style={freeze} className='col' id='strike-up-away'>{props.pitchType.strikeUpAway}</div>}
+      {strikeUpAwayDefine == "grey" && <div className='col' id='strike-up-away'>{strikeUpAwayAvg}</div>}
+      {strikeUpAwayDefine == "hot" && <div style={hot} className='col' id='strike-up-away'>{strikeUpAwayAvg}</div>}
+      {strikeUpAwayDefine == "medium" && <div style={medium} className='col' id='strike-up-away'>{strikeUpAwayAvg}</div>}
+      {strikeUpAwayDefine == "cold" && <div style={cold} className='col' id='strike-up-away'>{strikeUpAwayAvg}</div>}
+      {strikeUpAwayDefine == "freeze" && <div style={freeze} className='col' id='strike-up-away'>{strikeUpAwayAvg}</div>}
       
-      {strikeUpMidDefine == "grey" && <div className='col' id='strike-up-mid'>{props.pitchType.strikeUpMid}</div>}
-      {strikeUpMidDefine == "hot" && <div style={hot} className='col' id='strike-up-mid'>{props.pitchType.strikeUpMid}</div>}
-      {strikeUpMidDefine == "medium" && <div style={medium} className='col' id='strike-up-mid'>{props.pitchType.strikeUpMid}</div>}
-      {strikeUpMidDefine == "cold" && <div style={cold} className='col' id='strike-up-mid'>{props.pitchType.strikeUpMid}</div>}
-      {strikeUpMidDefine == "freeze" && <div style={freeze} className='col' id='strike-up-mid'>{props.pitchType.strikeUpMid}</div>}
+      {strikeUpMidDefine == "grey" && <div className='col' id='strike-up-mid'>{strikeUpMidAvg}</div>}
+      {strikeUpMidDefine == "hot" && <div style={hot} className='col' id='strike-up-mid'>{strikeUpMidAvg}</div>}
+      {strikeUpMidDefine == "medium" && <div style={medium} className='col' id='strike-up-mid'>{strikeUpMidAvg}</div>}
+      {strikeUpMidDefine == "cold" && <div style={cold} className='col' id='strike-up-mid'>{strikeUpMidAvg}</div>}
+      {strikeUpMidDefine == "freeze" && <div style={freeze} className='col' id='strike-up-mid'>{strikeUpMidAvg}</div>}
      
-      {strikeUpInDefine == "grey" && <div className='col' id='strike-up-in'>{props.pitchType.strikeUpIn}</div>}
-      {strikeUpInDefine == "hot" && <div style={hot} className='col' id='strike-up-in'>{props.pitchType.strikeUpIn}</div>}
-      {strikeUpInDefine == "medium" && <div style={medium} className='col' id='strike-up-in'>{props.pitchType.strikeUpIn}</div>}
-      {strikeUpInDefine == "cold" && <div style={cold} className='col' id='strike-up-in'>{props.pitchType.strikeUpIn}</div>}
-      {strikeUpInDefine == "freeze" && <div style={freeze} className='col' id='strike-up-in'>{props.pitchType.strikeUpIn}</div>}
+      {strikeUpInDefine == "grey" && <div className='col' id='strike-up-in'>{strikeUpInAvg}</div>}
+      {strikeUpInDefine == "hot" && <div style={hot} className='col' id='strike-up-in'>{strikeUpInAvg}</div>}
+      {strikeUpInDefine == "medium" && <div style={medium} className='col' id='strike-up-in'>{strikeUpInAvg}</div>}
+      {strikeUpInDefine == "cold" && <div style={cold} className='col' id='strike-up-in'>{strikeUpInAvg}</div>}
+      {strikeUpInDefine == "freeze" && <div style={freeze} className='col' id='strike-up-in'>{strikeUpInAvg}</div>}
      
-      {ballRightDefine == "grey" && <div className='col' id='ball-right'>{props.pitchType.ballRight}</div>}
-      {ballRightDefine == "hot" && <div style={hot} className='col' id='ball-right'>{props.pitchType.ballRight}</div>}
-      {ballRightDefine == "medium" && <div style={medium} className='col' id='ball-right'>{props.pitchType.ballRight}</div>}
-      {ballRightDefine == "cold" && <div style={cold} className='col' id='ball-right'>{props.pitchType.ballRight}</div>}
-      {ballRightDefine == "freeze" && <div style={freeze} className='col' id='ball-right'>{props.pitchType.ballRight}</div>}
+      {ballRightDefine == "grey" && <div className='col' id='ball-right'>{ballRightAvg}</div>}
+      {ballRightDefine == "hot" && <div style={hot} className='col' id='ball-right'>{ballRightAvg}</div>}
+      {ballRightDefine == "medium" && <div style={medium} className='col' id='ball-right'>{ballRightAvg}</div>}
+      {ballRightDefine == "cold" && <div style={cold} className='col' id='ball-right'>{ballRightAvg}</div>}
+      {ballRightDefine == "freeze" && <div style={freeze} className='col' id='ball-right'>{ballRightAvg}</div>}
     </div>
     <div className='row'>
       {ballLeftDefine == "grey" && <div className='col' id='ball-left'>Lefty Side</div>}
@@ -275,23 +275,23 @@ return (
       {ballLeftDefine == "cold" && <div style={cold} className='col' id='ball-left'>Lefty Side</div>}
       {ballLeftDefine == "freeze" && <div style={freeze} className='col' id='ball-left'>Lefty Side</div>}
       
-      {strikeMidAwayDefine == "grey" && <div className='col' id='strike-mid-away'>{props.pitchType.strikeMidAway}</div>}
-      {strikeMidAwayDefine == "hot" && <div style={hot} className='col' id='strike-mid-away'>{props.pitchType.strikeMidAway}</div>}
-      {strikeMidAwayDefine == "medium" && <div style={medium} className='col' id='strike-mid-away'>{props.pitchType.strikeMidAway}</div>}
-      {strikeMidAwayDefine == "cold" && <div style={cold} className='col' id='strike-mid-away'>{props.pitchType.strikeMidAway}</div>}
-      {strikeMidAwayDefine == "freeze" && <div style={freeze} className='col' id='strike-mid-away'>{props.pitchType.strikeMidAway}</div>}
+      {strikeMidAwayDefine == "grey" && <div className='col' id='strike-mid-away'>{strikeMidAwayAvg}</div>}
+      {strikeMidAwayDefine == "hot" && <div style={hot} className='col' id='strike-mid-away'>{strikeMidAwayAvg}</div>}
+      {strikeMidAwayDefine == "medium" && <div style={medium} className='col' id='strike-mid-away'>{strikeMidAwayAvg}</div>}
+      {strikeMidAwayDefine == "cold" && <div style={cold} className='col' id='strike-mid-away'>{strikeMidAwayAvg}</div>}
+      {strikeMidAwayDefine == "freeze" && <div style={freeze} className='col' id='strike-mid-away'>{strikeMidAwayAvg}</div>}
       
-      {strikeMidMidDefine == "grey" && <div className='col' id='strike-mid-mid'>{props.pitchType.strikeMidMid}</div>}
-      {strikeMidMidDefine == "hot" && <div style={hot} className='col' id='strike-mid-mid'>{props.pitchType.strikeMidMid}</div>}
-      {strikeMidMidDefine == "medium" && <div style={medium} className='col' id='strike-mid-mid'>{props.pitchType.strikeMidMid}</div>}
-      {strikeMidMidDefine == "cold" && <div style={cold} className='col' id='strike-mid-mid'>{props.pitchType.strikeMidMid}</div>}
-      {strikeMidMidDefine == "freeze" && <div style={freeze} className='col' id='strike-mid-mid'>{props.pitchType.strikeMidMid}</div>}
+      {strikeMidMidDefine == "grey" && <div className='col' id='strike-mid-mid'>{strikeMidMidAvg}</div>}
+      {strikeMidMidDefine == "hot" && <div style={hot} className='col' id='strike-mid-mid'>{strikeMidMidAvg}</div>}
+      {strikeMidMidDefine == "medium" && <div style={medium} className='col' id='strike-mid-mid'>{strikeMidMidAvg}</div>}
+      {strikeMidMidDefine == "cold" && <div style={cold} className='col' id='strike-mid-mid'>{strikeMidMidAvg}</div>}
+      {strikeMidMidDefine == "freeze" && <div style={freeze} className='col' id='strike-mid-mid'>{strikeMidMidAvg}</div>}
      
-      {strikeMidInDefine == "grey" && <div className='col' id='strike-mid-in'>{props.pitchType.strikeMidIn}</div>}
-      {strikeMidInDefine == "hot" && <div style={hot} className='col' id='strike-mid-in'>{props.pitchType.strikeMidIn}</div>}
-      {strikeMidInDefine == "medium" && <div style={medium} className='col' id='strike-mid-in'>{props.pitchType.strikeMidIn}</div>}
-      {strikeMidInDefine == "cold" && <div style={cold} className='col' id='strike-mid-in'>{props.pitchType.strikeMidIn}</div>}
-      {strikeMidInDefine == "freeze" && <div style={freeze} className='col' id='strike-mid-in'>{props.pitchType.strikeMidIn}</div>}
+      {strikeMidInDefine == "grey" && <div className='col' id='strike-mid-in'>{strikeMidInAvg}</div>}
+      {strikeMidInDefine == "hot" && <div style={hot} className='col' id='strike-mid-in'>{strikeMidInAvg}</div>}
+      {strikeMidInDefine == "medium" && <div style={medium} className='col' id='strike-mid-in'>{strikeMidInAvg}</div>}
+      {strikeMidInDefine == "cold" && <div style={cold} className='col' id='strike-mid-in'>{strikeMidInAvg}</div>}
+      {strikeMidInDefine == "freeze" && <div style={freeze} className='col' id='strike-mid-in'>{strikeMidInAvg}</div>}
      
       {ballRightDefine == "grey" && <div className='col' id='ball-right'>Righty Side</div>}
       {ballRightDefine == "hot" && <div style={hot} className='col' id='ball-right'>Righty Side</div>}
@@ -306,23 +306,23 @@ return (
       {ballLeftDefine == "cold" && <div style={cold} className='col' id='ball-left'></div>}
       {ballLeftDefine == "freeze" && <div style={freeze} className='col' id='ball-left'></div>}
       
-      {strikeDownAwayDefine == "grey" && <div className='col' id='strike-down-away'>{props.pitchType.strikeDownAway}</div>}
-      {strikeDownAwayDefine == "hot" && <div style={hot} className='col' id='strike-down-away'>{props.pitchType.strikeDownAway}</div>}
-      {strikeDownAwayDefine == "medium" && <div style={medium} className='col' id='strike-down-away'>{props.pitchType.strikeDownAway}</div>}
-      {strikeDownAwayDefine == "cold" && <div style={cold} className='col' id='strike-down-away'>{props.pitchType.strikeDownAway}</div>}
-      {strikeDownAwayDefine == "freeze" && <div style={freeze} className='col' id='strike-down-away'>{props.pitchType.strikeDownAway}</div>}
+      {strikeDownAwayDefine == "grey" && <div className='col' id='strike-down-away'>{strikeDownAwayAvg}</div>}
+      {strikeDownAwayDefine == "hot" && <div style={hot} className='col' id='strike-down-away'>{strikeDownAwayAvg}</div>}
+      {strikeDownAwayDefine == "medium" && <div style={medium} className='col' id='strike-down-away'>{strikeDownAwayAvg}</div>}
+      {strikeDownAwayDefine == "cold" && <div style={cold} className='col' id='strike-down-away'>{strikeDownAwayAvg}</div>}
+      {strikeDownAwayDefine == "freeze" && <div style={freeze} className='col' id='strike-down-away'>{strikeDownAwayAvg}</div>}
       
-      {strikeDownMidDefine == "grey" && <div className='col' id='strike-down-mid'>{props.pitchType.strikeDownMid}</div>}
-      {strikeDownMidDefine == "hot" && <div style={hot} className='col' id='strike-down-mid'>{props.pitchType.strikeDownMid}</div>}
-      {strikeDownMidDefine == "medium" && <div style={medium} className='col' id='strike-down-mid'>{props.pitchType.strikeDownMid}</div>}
-      {strikeDownMidDefine == "cold" && <div style={cold} className='col' id='strike-down-mid'>{props.pitchType.strikeDownMid}</div>}
-      {strikeDownMidDefine == "freeze" && <div style={freeze} className='col' id='strike-down-mid'>{props.pitchType.strikeDownMid}</div>}
+      {strikeDownMidDefine == "grey" && <div className='col' id='strike-down-mid'>{strikeDownMidAvg}</div>}
+      {strikeDownMidDefine == "hot" && <div style={hot} className='col' id='strike-down-mid'>{strikeDownMidAvg}</div>}
+      {strikeDownMidDefine == "medium" && <div style={medium} className='col' id='strike-down-mid'>{strikeDownMidAvg}</div>}
+      {strikeDownMidDefine == "cold" && <div style={cold} className='col' id='strike-down-mid'>{strikeDownMidAvg}</div>}
+      {strikeDownMidDefine == "freeze" && <div style={freeze} className='col' id='strike-down-mid'>{strikeDownMidAvg}</div>}
      
-      {strikeDownInDefine == "grey" && <div className='col' id='strike-down-in'>{props.pitchType.strikeDownIn}</div>}
-      {strikeDownInDefine == "hot" && <div style={hot} className='col' id='strike-down-in'>{props.pitchType.strikeDownIn}</div>}
-      {strikeDownInDefine == "medium" && <div style={medium} className='col' id='strike-down-in'>{props.pitchType.strikeDownIn}</div>}
-      {strikeDownInDefine == "cold" && <div style={cold} className='col' id='strike-down-in'>{props.pitchType.strikeDownIn}</div>}
-      {strikeDownInDefine == "freeze" && <div style={freeze} className='col' id='strike-down-in'>{props.pitchType.strikeDownIn}</div>}
+      {strikeDownInDefine == "grey" && <div className='col' id='strike-down-in'>{strikeDownInAvg}</div>}
+      {strikeDownInDefine == "hot" && <div style={hot} className='col' id='strike-down-in'>{strikeDownInAvg}</div>}
+      {strikeDownInDefine == "medium" && <div style={medium} className='col' id='strike-down-in'>{strikeDownInAvg}</div>}
+      {strikeDownInDefine == "cold" && <div style={cold} className='col' id='strike-down-in'>{strikeDownInAvg}</div>}
+      {strikeDownInDefine == "freeze" && <div style={freeze} className='col' id='strike-down-in'>{strikeDownInAvg}</div>}
 
       {ballRightDefine == "grey" && <div className='col' id='ball-right'></div>}
       {ballRightDefine == "hot" && <div style={hot} className='col' id='ball-right'></div>}
@@ -331,11 +331,11 @@ return (
       {ballRightDefine == "freeze" && <div style={freeze} className='col' id='ball-right'></div>}
     </div>
     <div className='row'>
-      {ballDownDefine == "grey" && <div className='col' id='ball-down'>{props.pitchType.ballDown}</div>}
-      {ballDownDefine == "hot" && <div style={hot} className='col' id='ball-down'>{props.pitchType.ballDown}</div>}
-      {ballDownDefine == "medium" && <div style={medium} className='col' id='ball-down'>{props.pitchType.ballDown}</div>}
-      {ballDownDefine == "cold" && <div style={cold} className='col' id='ball-down'>{props.pitchType.ballDown}</div>}
-      {ballDownDefine == "freeze" && <div style={freeze} className='col' id='ball-down'>{props.pitchType.ballDown}</div>}
+      {ballDownDefine == "grey" && <div className='col' id='ball-down'>{ballDownAvg}</div>}
+      {ballDownDefine == "hot" && <div style={hot} className='col' id='ball-down'>{ballDownAvg}</div>}
+      {ballDownDefine == "medium" && <div style={medium} className='col' id='ball-down'>{ballDownAvg}</div>}
+      {ballDownDefine == "cold" && <div style={cold} className='col' id='ball-down'>{ballDownAvg}</div>}
+      {ballDownDefine == "freeze" && <div style={freeze} className='col' id='ball-down'>{ballDownAvg}</div>}
     </div>
   </div>
 )

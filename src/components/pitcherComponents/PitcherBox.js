@@ -231,7 +231,7 @@ const PitcherBox = (props) => {
     const freeze = {
         background: "blue"
     }
-
+    
   return (
     <div className='container' id='box'>
       <div className='row'>

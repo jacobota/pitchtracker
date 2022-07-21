@@ -101,7 +101,7 @@ const Pitchers = () => {
       }
       breakingObject.thrown++
       setNumPitches(numPitches + 1)
-    } else if(pitchSelect == pitchType[4]) {
+    } else if(pitchSelect == pitchType[3]) {
       //offspeed
       if(pitchSelectLocation == pitchLocation[1]) {
         offSpeedObject.ballUp++

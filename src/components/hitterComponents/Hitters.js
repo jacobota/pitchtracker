@@ -42,6 +42,10 @@ const Hitters = () => {
       alert("Enter a value for pitch location")
       return
     }
+    else if(resultSelect == '') {
+      alert("Enter a value for the result of the pitch")
+      return
+    }
     else if(pitchSelect == pitchType[1]) {
       if(pitchSelectLocation == pitchLocation[1]) {
         if(resultSelect == resultType[1]) {
@@ -55,18 +59,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.ballUpAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.ballUp++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.ballUpAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.ballUp++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.ballUpAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.ballUp++
@@ -74,6 +81,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.ballUpAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.ballUp++
@@ -90,18 +98,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.ballLeftAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.ballLeft++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.ballLeftAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.ballLeft++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.ballLeftAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.ballLeft++
@@ -109,6 +120,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.ballLeftAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.ballLeft++
@@ -125,18 +137,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.ballRightAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.ballRight++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.ballRightAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.ballRight++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.ballRightAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.ballRight++
@@ -144,6 +159,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.ballRightAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.ballRight++
@@ -160,18 +176,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.ballDownAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.ballDown++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.ballDownAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.ballDown++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.ballDownAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.ballDown++
@@ -179,6 +198,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.ballDownAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.ballDown++
@@ -195,18 +215,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.strikeUpAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.strikeUpAway++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.strikeUpAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.strikeUpAway++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.strikeUpAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.strikeUpAway++
@@ -214,6 +237,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.strikeUpAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.strikeUpAway++
@@ -230,18 +254,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.strikeUpMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.strikeUpMid++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.strikeUpMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.strikeUpMid++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.strikeUpMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.strikeUpMid++
@@ -249,6 +276,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.strikeUpMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.strikeUpMid++
@@ -265,18 +293,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.strikeUpInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.strikeUpIn++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.strikeUpInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.strikeUpIn++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.strikeUpInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.strikeUpIn++
@@ -284,6 +315,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.strikeUpInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.strikeUpIn++
@@ -300,18 +332,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.strikeMidAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.strikeMidAway++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.strikeMidAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.strikeMidAway++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.strikeMidAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.strikeMidAway++
@@ -319,6 +354,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.strikeMidAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.strikeMidAway++
@@ -335,18 +371,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.strikeMidMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.strikeMidMid++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.strikeMidMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.strikeMidMid++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.strikeMidMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.strikeMidMid++
@@ -354,6 +393,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.strikeMidMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.strikeMidMid++
@@ -370,18 +410,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.strikeMidInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.strikeMidIn++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.strikeMidInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.strikeMidIn++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.strikeMidInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.strikeMidIn++
@@ -389,6 +432,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.strikeMidInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.strikeMidIn++
@@ -405,18 +449,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.strikeDownAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.strikeDownAway++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.strikeDownAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.strikeDownAway++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.strikeDownAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.strikeDownAway++
@@ -424,6 +471,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.strikeDownAwayAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.strikeDownAway++
@@ -440,18 +488,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.strikeDownMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.strikeDownMid++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.strikeDownMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.strikeDownMid++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.strikeDownMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.strikeDownMid++
@@ -459,6 +510,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.strikeDownMidAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.strikeDownMid++
@@ -475,18 +527,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           fastballObject.atbats++
           fastballObject.strikeDownInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg++
           fastballObject.strikeDownIn++
         }else if(resultSelect == resultType[6]) {
           fastballObject.atbats++
           fastballObject.strikeDownInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 2
           fastballObject.strikeDownIn++
         }else if(resultSelect == resultType[7]) {
           fastballObject.atbats++
           fastballObject.strikeDownInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 3
           fastballObject.strikeDownIn++
@@ -494,6 +549,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           fastballObject.atbats++
           fastballObject.strikeDownInAtbats++
+          fastballObject.obp++
           fastballObject.avg++
           fastballObject.slg = fastballObject.slg + 4
           fastballObject.strikeDownIn++
@@ -513,18 +569,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.ballUpAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.ballUp++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.ballUpAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.ballUp++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.ballUpAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.ballUp++
@@ -532,6 +591,8 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.ballUpAtbats++
+          offSpeedObject.obp++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.ballUp++
@@ -548,18 +609,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.ballLeftAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.ballLeft++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.ballLeftAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.ballLeft++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.ballLeftAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.ballLeft++
@@ -567,6 +631,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.ballLeftAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.ballLeft++
@@ -583,18 +648,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.ballRightAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.ballRight++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.ballRightAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.ballRight++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.ballRightAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.ballRight++
@@ -602,6 +670,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.ballRightAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.ballRight++
@@ -618,18 +687,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.ballDownAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.ballDown++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.ballDownAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.ballDown++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.ballDownAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.ballDown++
@@ -637,6 +709,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.ballDownAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.ballDown++
@@ -653,18 +726,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.strikeUpAway++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.strikeUpAway++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.strikeUpAway++
@@ -672,6 +748,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.strikeUpAway++
@@ -688,18 +765,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.strikeUpMid++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.strikeUpMid++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.strikeUpMid++
@@ -707,6 +787,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.strikeUpMid++
@@ -723,18 +804,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.strikeUpIn++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.strikeUpIn++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.strikeUpIn++
@@ -742,6 +826,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeUpInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.strikeUpIn++
@@ -758,18 +843,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.strikeMidAway++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.strikeMidAway++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.strikeMidAway++
@@ -777,6 +865,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.strikeMidAway++
@@ -793,18 +882,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.strikeMidMid++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.strikeMidMid++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.strikeMidMid++
@@ -812,6 +904,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.strikeMidMid++
@@ -828,18 +921,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.strikeMidIn++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.strikeMidIn++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.strikeMidIn++
@@ -847,6 +943,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeMidInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.strikeMidIn++
@@ -863,18 +960,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.strikeDownAway++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.strikeDownAway++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.strikeDownAway++
@@ -882,6 +982,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownAwayAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.strikeDownAway++
@@ -898,18 +999,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.strikeDownMid++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.strikeDownMid++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.strikeDownMid++
@@ -917,6 +1021,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownMidAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.strikeDownMid++
@@ -933,18 +1038,21 @@ const Hitters = () => {
         }else if(resultSelect == resultType[5]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg++
           offSpeedObject.strikeDownIn++
         }else if(resultSelect == resultType[6]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 2
           offSpeedObject.strikeDownIn++
         }else if(resultSelect == resultType[7]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 3
           offSpeedObject.strikeDownIn++
@@ -952,6 +1060,7 @@ const Hitters = () => {
         else if(resultSelect == resultType[8]) {
           offSpeedObject.atbats++
           offSpeedObject.strikeDownInAtbats++
+          offSpeedObject.obp++
           offSpeedObject.avg++
           offSpeedObject.slg = offSpeedObject.slg + 4
           offSpeedObject.strikeDownIn++
