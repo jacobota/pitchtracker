@@ -6,11 +6,10 @@ import PitcherStats from'./PitchStats'
 const Pitchers = () => {
   //set states that will be used
   const [fastballObject, setFastballObject] = useState({ type: 'Fastball', thrown: 0, percent:0, ballUp: 0, ballLeft: 0, ballRight: 0, ballDown: 0, strikeUpAway: 0, strikeUpMid: 0, strikeUpIn: 0, strikeMidAway: 0, strikeMidMid: 0, strikeMidIn: 0, strikeDownAway: 0, strikeDownMid: 0, strikeDownIn: 0})
-  const [curveballObject, setCurveballObject] = useState({ type: 'Curveball', thrown: 0, percent:0, ballUp: 0, ballLeft: 0, ballRight: 0, ballDown: 0, strikeUpAway: 0, strikeUpMid: 0, strikeUpIn: 0, strikeMidAway: 0, strikeMidMid: 0, strikeMidIn: 0, strikeDownAway: 0, strikeDownMid: 0, strikeDownIn: 0 })
-  const [sliderObject, setSliderObject] = useState({ type: 'Slider', thrown: 0, percent:0, ballUp: 0, ballLeft: 0, ballRight: 0, ballDown: 0, strikeUpAway: 0, strikeUpMid: 0, strikeUpIn: 0, strikeMidAway: 0, strikeMidMid: 0, strikeMidIn: 0, strikeDownAway: 0, strikeDownMid: 0, strikeDownIn: 0 })
-  const [changeupObject, setChangeupObject] = useState({ type: 'Change-up', thrown: 0, percent:0, ballUp: 0, ballLeft: 0, ballRight: 0, ballDown: 0, strikeUpAway: 0, strikeUpMid: 0, strikeUpIn: 0, strikeMidAway: 0, strikeMidMid: 0, strikeMidIn: 0, strikeDownAway: 0, strikeDownMid: 0, strikeDownIn: 0 })
-  const [pitchType, setPitchType] = useState(['','Fastball', 'Curveball', 'Slider', 'Change-up'])
-  const [pitchTypeOnFilter, setPitchTypeOnFilter] = useState(['', 'Fastball', 'Curveball', 'Slider', 'Change-up'])
+  const [breakingObject, setBreakingObject] = useState({ type: 'Breakingball', thrown: 0, percent:0, ballUp: 0, ballLeft: 0, ballRight: 0, ballDown: 0, strikeUpAway: 0, strikeUpMid: 0, strikeUpIn: 0, strikeMidAway: 0, strikeMidMid: 0, strikeMidIn: 0, strikeDownAway: 0, strikeDownMid: 0, strikeDownIn: 0 })
+  const [offSpeedObject, setoffSpeedObject] = useState({ type: 'Offspeed', thrown: 0, percent:0, ballUp: 0, ballLeft: 0, ballRight: 0, ballDown: 0, strikeUpAway: 0, strikeUpMid: 0, strikeUpIn: 0, strikeMidAway: 0, strikeMidMid: 0, strikeMidIn: 0, strikeDownAway: 0, strikeDownMid: 0, strikeDownIn: 0 })
+  const [pitchType, setPitchType] = useState(['','Fastball', 'Breakingball', 'Offspeed'])
+  const [pitchTypeOnFilter, setPitchTypeOnFilter] = useState(['', 'Fastball', 'Breakingball', 'Offspeed'])
   const [pitchSelect, setPitchSelect] = useState("")
   const [pitchSelectLocation, setPitchSelectLocation] = useState("")
   const [pitchFilter, setPitchFilter] = useState("")
@@ -41,6 +40,7 @@ const Pitchers = () => {
       return
     }
     else if(pitchSelect == pitchType[1]) {
+      //fastballs
       if(pitchSelectLocation == pitchLocation[1]) {
         fastballObject.ballUp++
       } else if(pitchSelectLocation == pitchLocation[2]) {
@@ -71,110 +71,79 @@ const Pitchers = () => {
       fastballObject.thrown++
       setNumPitches(numPitches + 1)
     } else if(pitchSelect == pitchType[2]) {
+      //breaking balls
       if(pitchSelectLocation == pitchLocation[1]) {
-        curveballObject.ballUp++
+        breakingObject.ballUp++
       } else if(pitchSelectLocation == pitchLocation[2]) {
-        curveballObject.ballLeft++
+        breakingObject.ballLeft++
       } else if(pitchSelectLocation == pitchLocation[3]) {
-        curveballObject.ballRight++
+        breakingObject.ballRight++
       } else if(pitchSelectLocation == pitchLocation[4]) {
-        curveballObject.ballDown++
+        breakingObject.ballDown++
       } else if(pitchSelectLocation == pitchLocation[5]) {
-        curveballObject.strikeUpAway++
+        breakingObject.strikeUpAway++
       } else if(pitchSelectLocation == pitchLocation[6]) {
-        curveballObject.strikeUpMid++
+        breakingObject.strikeUpMid++
       } else if(pitchSelectLocation == pitchLocation[7]) {
-        curveballObject.strikeUpIn++
+        breakingObject.strikeUpIn++
       } else if(pitchSelectLocation == pitchLocation[8]) {
-        curveballObject.strikeMidAway++
+        breakingObject.strikeMidAway++
       } else if(pitchSelectLocation == pitchLocation[9]) {
-        curveballObject.strikeMidMid++
+        breakingObject.strikeMidMid++
       } else if(pitchSelectLocation == pitchLocation[10]) {
-        curveballObject.strikeMidIn++
+        breakingObject.strikeMidIn++
       } else if(pitchSelectLocation == pitchLocation[11]) {
-        curveballObject.strikeDownAway++
+        breakingObject.strikeDownAway++
       } else if(pitchSelectLocation == pitchLocation[12]) {
-        curveballObject.strikeDownMid++
+        breakingObject.strikeDownMid++
       } else if(pitchSelectLocation == pitchLocation[13]) {
-        curveballObject.strikeDownIn++
+        breakingObject.strikeDownIn++
       }
-      curveballObject.thrown++
-      setNumPitches(numPitches + 1)
-    } else if(pitchSelect == pitchType[3]) {
-      if(pitchSelectLocation == pitchLocation[1]) {
-        sliderObject.ballUp++
-      } else if(pitchSelectLocation == pitchLocation[2]) {
-        sliderObject.ballLeft++
-      } else if(pitchSelectLocation == pitchLocation[3]) {
-        sliderObject.ballRight++
-      } else if(pitchSelectLocation == pitchLocation[4]) {
-        sliderObject.ballDown++
-      } else if(pitchSelectLocation == pitchLocation[5]) {
-        sliderObject.strikeUpAway++
-      } else if(pitchSelectLocation == pitchLocation[6]) {
-        sliderObject.strikeUpMid++
-      } else if(pitchSelectLocation == pitchLocation[7]) {
-        sliderObject.strikeUpIn++
-      } else if(pitchSelectLocation == pitchLocation[8]) {
-        sliderObject.strikeMidAway++
-      } else if(pitchSelectLocation == pitchLocation[9]) {
-        sliderObject.strikeMidMid++
-      } else if(pitchSelectLocation == pitchLocation[10]) {
-        sliderObject.strikeMidIn++
-      } else if(pitchSelectLocation == pitchLocation[11]) {
-        sliderObject.strikeDownAway++
-      } else if(pitchSelectLocation == pitchLocation[12]) {
-        sliderObject.strikeDownMid++
-      } else if(pitchSelectLocation == pitchLocation[13]) {
-        sliderObject.strikeDownIn++
-      }
-      sliderObject.thrown++
+      breakingObject.thrown++
       setNumPitches(numPitches + 1)
     } else if(pitchSelect == pitchType[4]) {
+      //offspeed
       if(pitchSelectLocation == pitchLocation[1]) {
-        changeupObject.ballUp++
+        offSpeedObject.ballUp++
       } else if(pitchSelectLocation == pitchLocation[2]) {
-        changeupObject.ballLeft++
+        offSpeedObject.ballLeft++
       } else if(pitchSelectLocation == pitchLocation[3]) {
-        changeupObject.ballRight++
+        offSpeedObject.ballRight++
       } else if(pitchSelectLocation == pitchLocation[4]) {
-        changeupObject.ballDown++
+        offSpeedObject.ballDown++
       } else if(pitchSelectLocation == pitchLocation[5]) {
-        changeupObject.strikeUpAway++
+        offSpeedObject.strikeUpAway++
       } else if(pitchSelectLocation == pitchLocation[6]) {
-        changeupObject.strikeUpMid++
+        offSpeedObject.strikeUpMid++
       } else if(pitchSelectLocation == pitchLocation[7]) {
-        changeupObject.strikeUpIn++
+        offSpeedObject.strikeUpIn++
       } else if(pitchSelectLocation == pitchLocation[8]) {
-        changeupObject.strikeMidAway++
+        offSpeedObject.strikeMidAway++
       } else if(pitchSelectLocation == pitchLocation[9]) {
-        changeupObject.strikeMidMid++
+        offSpeedObject.strikeMidMid++
       } else if(pitchSelectLocation == pitchLocation[10]) {
-        changeupObject.strikeMidIn++
+        offSpeedObject.strikeMidIn++
       } else if(pitchSelectLocation == pitchLocation[11]) {
-        changeupObject.strikeDownAway++
+        offSpeedObject.strikeDownAway++
       } else if(pitchSelectLocation == pitchLocation[12]) {
-        changeupObject.strikeDownMid++
+        offSpeedObject.strikeDownMid++
       } else if(pitchSelectLocation == pitchLocation[13]) {
-        changeupObject.strikeDownIn++
+        offSpeedObject.strikeDownIn++
       }
-      changeupObject.thrown++
+      offSpeedObject.thrown++
       setNumPitches(numPitches + 1)
     }
     let fastballPerc = fastballObject.thrown / numPitches
     fastballObject.percent = fastballPerc
-    let curvePerc = curveballObject.thrown / numPitches
-    curveballObject.percent = curvePerc
-    let sliderPerc = sliderObject.thrown / numPitches
-    sliderObject.percent = sliderPerc
-    let changeupPerc = changeupObject.thrown / numPitches
-    changeupObject.percent = changeupPerc
+    let offSpeedPerc = offSpeedObject.thrown / numPitches
+    offSpeedObject.percent = offSpeedPerc
+    let breakingPerc = breakingObject.thrown / numPitches
+    breakingObject.percent = breakingPerc
   }
 
   let displayFastball = pitchFilter == pitchTypeOnFilter[1]
-  let displayCurveball = pitchFilter == pitchTypeOnFilter[2]
-  let displaySlider = pitchFilter == pitchTypeOnFilter[3]
-  let displayChangeup = pitchFilter == pitchTypeOnFilter[4]
+  let displayBreaking = pitchFilter == pitchTypeOnFilter[2]
+  let displayOffSpeed = pitchFilter == pitchTypeOnFilter[4]
 
   return (
     <>
@@ -182,7 +151,7 @@ const Pitchers = () => {
         <h1 id='header'>Pitcher View</h1>
       </div>
       <div className='mt-5 p-5 d-flex flex-column align-items-center justify-content-center container' id='textContainer'>
-        <label className='mb-5' id='labels'>Pitch Location:
+        <label className='mb-5' id='labels'>Pitch Type:
         <select className='ms-3' value={pitchSelect} onChange={changeSelectedPitch}>
           {pitchType.map((type) => {
             return <option id={type}>{type}</option>
@@ -200,16 +169,14 @@ const Pitchers = () => {
       </div>
       <div className='pt-5 d-flex justify-content-center'>
         {displayFastball && <PitcherBox pitchType={fastballObject}/>}
-        {displayCurveball && <PitcherBox pitchType={curveballObject}/>}
-        {displaySlider && <PitcherBox pitchType={sliderObject}/>}
-        {displayChangeup && <PitcherBox pitchType={changeupObject}/>}
-      </div>
+        {displayBreaking && <PitcherBox pitchType={breakingObject}/>}
+        {displayOffSpeed && <PitcherBox pitchType={offSpeedObject}/>}
+        </div>
       <div className=' mt-5 p-5 d-flex justify-content-center container'>
         {displayFastball && <PitcherStats pitchType={fastballObject}/>}
-        {displayCurveball && <PitcherStats pitchType={curveballObject}/>}
-        {displaySlider && <PitcherStats pitchType={sliderObject}/>}
-        {displayChangeup && <PitcherStats pitchType={changeupObject}/>}
-      </div>
+        {displayBreaking && <PitcherStats pitchType={breakingObject}/>}
+        {displayOffSpeed && <PitcherStats pitchType={offSpeedObject}/>}
+        </div>
       <div className='pt-5 d-flex justify-content-center'>
       <label className='mb-5' id='labels'>Filter Pitch:
         <select className='ms-3' value={pitchFilter} onChange={changePitchFilter}>
